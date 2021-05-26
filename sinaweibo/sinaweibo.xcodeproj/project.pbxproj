@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		523A623A1C9E3910005ECA37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A62391C9E3910005ECA37 /* AppDelegate.swift */; };
 		523A62411C9E3910005ECA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523A62401C9E3910005ECA37 /* Assets.xcassets */; };
+		523A62671C9E3E88005ECA37 /* GZHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A62661C9E3E88005ECA37 /* GZHomeController.swift */; };
+		523A62691C9E3EA5005ECA37 /* GZMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A62681C9E3EA5005ECA37 /* GZMessageController.swift */; };
+		523A626B1C9E3ECC005ECA37 /* GZProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A626A1C9E3ECC005ECA37 /* GZProfileController.swift */; };
+		523A626D1C9E3EE3005ECA37 /* GZDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A626C1C9E3EE3005ECA37 /* GZDiscoverController.swift */; };
+		523A626F1C9E40EE005ECA37 /* GZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A626E1C9E40EE005ECA37 /* GZMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +21,11 @@
 		523A62391C9E3910005ECA37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		523A62401C9E3910005ECA37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		523A62451C9E3910005ECA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		523A62661C9E3E88005ECA37 /* GZHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZHomeController.swift; sourceTree = "<group>"; };
+		523A62681C9E3EA5005ECA37 /* GZMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZMessageController.swift; sourceTree = "<group>"; };
+		523A626A1C9E3ECC005ECA37 /* GZProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZProfileController.swift; sourceTree = "<group>"; };
+		523A626C1C9E3EE3005ECA37 /* GZDiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZDiscoverController.swift; sourceTree = "<group>"; };
+		523A626E1C9E40EE005ECA37 /* GZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +123,7 @@
 		523A62511C9E3D97005ECA37 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				523A626C1C9E3EE3005ECA37 /* GZDiscoverController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -144,6 +155,7 @@
 		523A62551C9E3D97005ECA37 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				523A62661C9E3E88005ECA37 /* GZHomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,6 +187,7 @@
 		523A62591C9E3D97005ECA37 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				523A626E1C9E40EE005ECA37 /* GZMainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,6 +219,7 @@
 		523A625D1C9E3D97005ECA37 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				523A62681C9E3EA5005ECA37 /* GZMessageController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -237,6 +251,7 @@
 		523A62611C9E3D97005ECA37 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				523A626A1C9E3ECC005ECA37 /* GZProfileController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -342,6 +357,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				523A623A1C9E3910005ECA37 /* AppDelegate.swift in Sources */,
+				523A62671C9E3E88005ECA37 /* GZHomeController.swift in Sources */,
+				523A626B1C9E3ECC005ECA37 /* GZProfileController.swift in Sources */,
+				523A626D1C9E3EE3005ECA37 /* GZDiscoverController.swift in Sources */,
+				523A626F1C9E40EE005ECA37 /* GZMainViewController.swift in Sources */,
+				523A62691C9E3EA5005ECA37 /* GZMessageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

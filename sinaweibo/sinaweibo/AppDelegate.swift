@@ -16,9 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = UIViewController()
-        window?.rootViewController?.view.backgroundColor = UIColor.redColor()
+        let tabVC = GZMainViewController()
+        window?.rootViewController = tabVC
         window?.makeKeyAndVisible()
+    
+        
         return true
     }
 
