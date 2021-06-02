@@ -13,6 +13,8 @@ class GZMainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //添加自定义tabbarItem kvc
+        setValue(GZMainTabBar(), forKey: "tabBar")
         //首页
         let homeVC = GZHomeController()
         addChildViewController(homeVC, title: "首页", imageName: "tabbar_home")
@@ -26,7 +28,9 @@ class GZMainViewController: UITabBarController {
         let profileVC = GZProfileController()
         addChildViewController(profileVC, title: "我", imageName: "tabbar_profile")
     }
-    
+    /**
+    添加子控制器
+    */
     func addChildViewController(viewVC: UIViewController,title: String,imageName: String) {
         viewVC.title = title
         viewVC.tabBarItem.image = UIImage(named: imageName)
