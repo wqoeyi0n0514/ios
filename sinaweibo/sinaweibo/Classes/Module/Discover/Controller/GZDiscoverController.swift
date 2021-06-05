@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GZDiscoverController: UITableViewController {
+class GZDiscoverController: GZBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

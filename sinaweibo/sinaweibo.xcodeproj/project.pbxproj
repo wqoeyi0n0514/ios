@@ -15,6 +15,8 @@
 		523A626D1C9E3EE3005ECA37 /* GZDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A626C1C9E3EE3005ECA37 /* GZDiscoverController.swift */; };
 		523A626F1C9E40EE005ECA37 /* GZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A626E1C9E40EE005ECA37 /* GZMainViewController.swift */; };
 		523A62751C9E48E1005ECA37 /* GZMainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A62741C9E48E1005ECA37 /* GZMainTabBar.swift */; };
+		52A419271CA00663008E09A1 /* GZBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A419261CA00663008E09A1 /* GZBaseTableViewController.swift */; };
+		52A4192B1CA008DF008E09A1 /* GZVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4192A1CA008DF008E09A1 /* GZVisitorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		523A626C1C9E3EE3005ECA37 /* GZDiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZDiscoverController.swift; sourceTree = "<group>"; };
 		523A626E1C9E40EE005ECA37 /* GZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZMainViewController.swift; sourceTree = "<group>"; };
 		523A62741C9E48E1005ECA37 /* GZMainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZMainTabBar.swift; sourceTree = "<group>"; };
+		52A419261CA00663008E09A1 /* GZBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZBaseTableViewController.swift; sourceTree = "<group>"; };
+		52A4192A1CA008DF008E09A1 /* GZVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZVisitorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				523A626E1C9E40EE005ECA37 /* GZMainViewController.swift */,
+				52A419261CA00663008E09A1 /* GZBaseTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				523A62741C9E48E1005ECA37 /* GZMainTabBar.swift */,
+				52A4192A1CA008DF008E09A1 /* GZVisitorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -363,7 +369,9 @@
 				523A62751C9E48E1005ECA37 /* GZMainTabBar.swift in Sources */,
 				523A62671C9E3E88005ECA37 /* GZHomeController.swift in Sources */,
 				523A626B1C9E3ECC005ECA37 /* GZProfileController.swift in Sources */,
+				52A4192B1CA008DF008E09A1 /* GZVisitorView.swift in Sources */,
 				523A626D1C9E3EE3005ECA37 /* GZDiscoverController.swift in Sources */,
+				52A419271CA00663008E09A1 /* GZBaseTableViewController.swift in Sources */,
 				523A626F1C9E40EE005ECA37 /* GZMainViewController.swift in Sources */,
 				523A62691C9E3EA5005ECA37 /* GZMessageController.swift in Sources */,
 			);

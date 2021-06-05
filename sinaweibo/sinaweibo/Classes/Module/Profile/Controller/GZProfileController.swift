@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GZProfileController: UITableViewController {
+class GZProfileController: GZBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GZMessageController: UITableViewController {
+class GZMessageController: GZBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
