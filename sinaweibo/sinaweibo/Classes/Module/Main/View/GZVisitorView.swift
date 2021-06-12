@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol GZVisitorViewDelegate : NSObjectProtocol{
+    func didRegiestButtonClick(visitorView: GZVisitorView)
+    func didLoginButtionClick(visitorView: GZVisitorView)
+}
+
 class GZVisitorView: UIView {
+    weak var delegate: GZVisitorViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -67,7 +73,7 @@ class GZVisitorView: UIView {
         addConstraint(NSLayoutConstraint(item: iconImageView, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterY, multiplier: 1, constant: -40))
         //遮罩约束
         addConstraint(NSLayoutConstraint(item: coverImageView, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Width, multiplier: 1, constant: 0))
-         addConstraint(NSLayoutConstraint(item: coverImageView, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Top, multiplier: 1, constant: 0))
+        addConstraint(NSLayoutConstraint(item: coverImageView, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Top, multiplier: 1, constant: 0))
         addConstraint(NSLayoutConstraint(item: coverImageView, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: regiestButton, attribute: NSLayoutAttribute.Bottom, multiplier: 1, constant: 0))
         
         //home
@@ -94,12 +100,11 @@ class GZVisitorView: UIView {
         
     }
     // MARK: - 按钮事件
-    private func regiestButtonAction(){
-       
-    
+    func regiestButtonAction(){
+        delegate?.didRegiestButtonClick(self)
     }
-    private func loginButtonAction(){
-        
+    @objc private func loginButtonAction(){
+        delegate?.didLoginButtionClick(self)
     }
     
     // MARK: - 懒加载控件
