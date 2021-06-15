@@ -42,10 +42,14 @@ class GZBaseTableViewController: UITableViewController,GZVisitorViewDelegate {
 extension GZBaseTableViewController{
     // MARK: - GZVisitorViewDelegate
     func didRegiestButtonClick(visitorView: GZVisitorView){
+        
        
     }
     func didLoginButtionClick(visitorView: GZVisitorView){
-      
+        let oauthVC = GZOauthViewController()
+        
+        presentViewController(UINavigationController(rootViewController: oauthVC), animated: true, completion: nil)
     }
+    
   
 }
